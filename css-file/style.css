@@ -20,7 +20,12 @@ a {
   text-decoration: none;
 }
 
+span {
+  color: #4caf4f;
+}
+
 .container {
+  width: 100%;
   margin: 0 auto;
   max-width: 1150px;
 }
@@ -39,7 +44,7 @@ a {
   font-size: 16px;
   font-weight: 500;
   border-radius: 6px;
-  padding: 12px 22px;
+  padding: 12px 28px;
   transition: all 0.2s;
   background: #4caf4f;
 }
@@ -67,16 +72,16 @@ nav ul li {
 }
 
 nav ul li a {
+  margin: 0 24px;
   color: #18191f;
   font-size: 16px;
   font-weight: 400;
-  margin: 0 24px;
   transition: all 0.2s;
 }
 
 nav ul li a:hover {
   color: #4caf4f;
-  text-decoration: line-through;
+  text-decoration: underline;
 }
 
 .logo {
@@ -104,4 +109,24 @@ nav ul li a:hover {
 /* ============= Header section design start ============= */
 header {
   background: #f5f7fa;
+}
+
+.banner {
+  gap: 100px;
+  display: flex;
+  padding: 100px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-right h2 {
+  color: #4d4d4d;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 76px;
+}
+
+.banner-right p {
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
