@@ -11,9 +11,9 @@
 
 p {
   color: #717171;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 a {
@@ -36,7 +36,7 @@ span {
 
 .section-title {
   color: #4d4d4d;
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 44px;
 }
@@ -125,7 +125,7 @@ header {
 
 .banner-right h2 {
   color: #4d4d4d;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 600;
   line-height: 76px;
 }
@@ -135,25 +135,84 @@ header {
   margin-bottom: 32px;
 }
 
+/* ============= Our Clients section design start ============= */
+.our-clients-content {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.short-description {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.clients-img-content {
+  /* height: 98px; */
+  display: flex;
+  margin: 60px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.client-card-container {
+  gap: 80px;
+  display: flex;
+  margin-top: 28px;
+  justify-content: space-between;
+}
+
+.client-card-container .card {
+  border-radius: 8px;
+  padding: 24px 32px;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+}
+
+.card img {
+  border-radius: 18px 5px 10px 5px;
+  background: #e8f5e9;
+  padding: 8px;
+}
+
+.client-card-container .card-title {
+  color: #4d4d4d;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 16px 0;
+}
+
 /* ========== Responsive media queries ========== */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-  .banner {
-    padding: 0 30px;
+  .banner,
+  .client-card-container {
+    padding: 30px;
   }
 
   nav,
+  .client-card-container,
   .banner {
     flex-direction: column;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .clients-img-content,
+  .client-card-container,
   .banner {
     flex-direction: column;
   }
 
-  .banner {
-    padding: 0 20px;
+  .clients-img-content,
+  .client-card-container {
+    gap: 24px;
+  }
+
+  .banner,
+  .client-card-container {
+    padding: 20px;
   }
 
   .banner-left img {
