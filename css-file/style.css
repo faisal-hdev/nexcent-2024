@@ -184,16 +184,39 @@ header {
   margin: 16px 0;
 }
 
+.unseen-container {
+  gap: 50px;
+  display: flex;
+  padding: 50px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.unseen-img {
+  max-width: 100%;
+}
+
+.unseen-text-content {
+  text-align: left;
+}
+
+.unseen-description-text {
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
 /* ========== Responsive media queries ========== */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   .banner,
-  .client-card-container {
+  .client-card-container,
+  .unseen-container {
     padding: 30px;
   }
 
   nav,
   .client-card-container,
-  .banner {
+  .banner,
+  .unseen-container {
     flex-direction: column;
   }
 }
@@ -201,6 +224,7 @@ header {
 @media only screen and (max-width: 768px) {
   .clients-img-content,
   .client-card-container,
+  .unseen-container,
   .banner {
     flex-direction: column;
   }
@@ -211,7 +235,8 @@ header {
   }
 
   .banner,
-  .client-card-container {
+  .client-card-container,
+  .unseen-container {
     padding: 20px;
   }
 
