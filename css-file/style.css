@@ -191,10 +191,6 @@ header {
   justify-content: space-between;
 }
 
-.unseen-img img {
-  max-width: 100%;
-}
-
 .unseen-text-content {
   text-align: left;
 }
@@ -271,6 +267,9 @@ header {
   .helping-content {
     gap: 80px;
   }
+  .unseen-img img {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -285,6 +284,10 @@ header {
   .clients-img-content,
   .client-card-container {
     gap: 24px;
+  }
+
+  .unseen-img img {
+    max-width: 100%;
   }
 
   .banner,
