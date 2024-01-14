@@ -350,6 +350,99 @@ header {
   margin-bottom: 34px;
 }
 
+/* footer section */
+
+.footer-section {
+  background: #263238;
+  padding: 66px 165px;
+}
+
+.footer-container {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+}
+
+.brand-logo img {
+  margin: 6px;
+}
+
+.text {
+  margin: 40px 0;
+}
+
+.text p {
+  color: #ffff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials img {
+  cursor: pointer;
+}
+
+.col-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.pages p {
+  color: #f5f7fa;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.help-center p {
+  color: #f5f7fa;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+form {
+  display: flex;
+}
+
+form input {
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  outline: none;
+  color: black;
+  font-weight: 400;
+  padding: 18px 36px;
+  border-radius: 50px 0px 0px 50px;
+}
+
+form button img {
+  width: 20px;
+}
+
+form button {
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 18px 36px;
+  background: #4caf4f;
+  transition: all 0.2s;
+  border-radius: 0px 50px 50px 0px;
+}
+
+form button:hover {
+  background: #49cc4d;
+}
+
 /* ========== Responsive media queries ========== */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   .banner,
@@ -357,8 +450,14 @@ header {
   .unseen-container,
   .helping-content,
   .customer-all-content,
-  .marketing-content {
+  .marketing-content,
+  .footer-section,
+  .clients-img-content {
     padding: 30px;
+  }
+
+  .socials {
+    justify-content: space-around;
   }
 
   .helping-column-2 {
@@ -371,7 +470,8 @@ header {
   .unseen-container,
   .helping-content,
   .customer-all-content,
-  .card-container {
+  .card-container,
+  .footer-container {
     flex-direction: column;
   }
 
@@ -381,6 +481,10 @@ header {
   .marketing-card,
   .unseen-img img {
     max-width: 100%;
+  }
+
+  .footer-container {
+    gap: 30px;
   }
 }
 
@@ -392,14 +496,16 @@ header {
   .helping-content,
   .customer-all-content,
   .customer-box,
-  .card-container {
+  .card-container,
+  .footer-container {
     flex-direction: column;
   }
 
   .clients-img-content,
   .client-card-container,
   .customer-box,
-  .customer-all-content {
+  .customer-all-content,
+  .footer-container {
     gap: 24px;
   }
 
@@ -413,8 +519,19 @@ header {
   .unseen-container,
   .helping-content,
   .customer-all-content,
-  .marketing-content {
+  .marketing-content,
+  .footer-section {
     padding: 20px;
+  }
+
+  .text {
+    margin: 10px 0;
+  }
+
+  form input {
+    width: 187px;
+    padding: 20px 20px;
+    border-radius: 0px 0px 0px 0px;
   }
 
   .helping-column-2 {
