@@ -148,7 +148,6 @@ header {
 }
 
 .clients-img-content {
-  /* height: 98px; */
   display: flex;
   margin: 60px 0;
   align-items: center;
@@ -192,7 +191,7 @@ header {
   justify-content: space-between;
 }
 
-.unseen-img {
+.unseen-img img {
   max-width: 100%;
 }
 
@@ -205,19 +204,72 @@ header {
   margin-bottom: 40px;
 }
 
+/* ============= Helping business section design start ============= */
+.helping-section {
+  background: #f5f7fa;
+}
+
+.helping-content {
+  display: flex;
+  padding: 66px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.helping-text {
+  font-weight: 400;
+  font-size: 18px;
+  color: #18191f;
+  margin-top: 10px;
+}
+
+.helping-column-2 {
+  display: grid;
+  gap: 60px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.local-business-count {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.local-business-count h3 {
+  color: #4d4d4d;
+  font-size: 28px;
+  font-weight: 700;
+  /* line-height: 36px; */
+}
+
+.local-business-count img {
+  max-width: 100%;
+  height: 90%;
+}
+
 /* ========== Responsive media queries ========== */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   .banner,
   .client-card-container,
-  .unseen-container {
+  .unseen-container,
+  .helping-content {
     padding: 30px;
+  }
+
+  .helping-column-2 {
+    grid-template-columns: 1fr;
   }
 
   nav,
   .client-card-container,
   .banner,
-  .unseen-container {
+  .unseen-container,
+  .helping-content {
     flex-direction: column;
+  }
+
+  .helping-content {
+    gap: 80px;
   }
 }
 
@@ -225,7 +277,8 @@ header {
   .clients-img-content,
   .client-card-container,
   .unseen-container,
-  .banner {
+  .banner,
+  .helping-content {
     flex-direction: column;
   }
 
@@ -236,8 +289,18 @@ header {
 
   .banner,
   .client-card-container,
-  .unseen-container {
+  .unseen-container,
+  .helping-content {
     padding: 20px;
+  }
+
+  .helping-column-2 {
+    gap: 40px;
+    grid-template-columns: 1fr;
+  }
+
+  .helping-content {
+    gap: 50px;
   }
 
   .banner-left img {
