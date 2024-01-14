@@ -332,6 +332,24 @@ header {
   line-height: 28px;
 }
 
+/* ============= Marketing section design start ============= */
+
+.demo-section {
+  text-align: center;
+  padding: 44px 0px;
+  background: #f5f7fa;
+}
+
+.demo-section h2 {
+  margin: 0 auto;
+  color: #263238;
+  font-size: 4rem;
+  font-weight: 600;
+  max-width: 887px;
+  line-height: 76px;
+  margin-bottom: 34px;
+}
+
 /* ========== Responsive media queries ========== */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   .banner,
@@ -402,6 +420,11 @@ header {
   .helping-column-2 {
     gap: 40px;
     grid-template-columns: 1fr;
+  }
+
+  .demo-section h2 {
+    font-size: 2rem;
+    line-height: 40px;
   }
 
   .helping-content {
