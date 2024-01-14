@@ -104,6 +104,7 @@ nav ul li a:hover {
 .login-btn {
   color: #49cc4d;
   background: none;
+  border: 1px solid #49cc4d;
 }
 
 .login-btn:hover {
@@ -243,12 +244,50 @@ header {
   height: 90%;
 }
 
+/* ============= Meet all customers section design start ============= */
+.customers-section {
+  background: var(--Neutral-Silver, #f5f7fa);
+}
+
+.customer-all-content {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  margin: 46px auto;
+  padding: 36px 0;
+}
+
+.customer-image {
+  max-width: 100%;
+}
+
+.customer-Association {
+  color: #4caf4f;
+  font-size: 20px;
+  margin: 16px 0;
+  font-weight: 500;
+}
+
+.customer-box {
+  margin: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.all-cstmr {
+  color: var(--Brand-Primary, #4caf4f);
+  font-size: 20px;
+  font-weight: 500;
+}
+
 /* ========== Responsive media queries ========== */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   .banner,
   .client-card-container,
   .unseen-container,
-  .helping-content {
+  .helping-content,
+  .customer-all-content {
     padding: 30px;
   }
 
@@ -260,7 +299,8 @@ header {
   .client-card-container,
   .banner,
   .unseen-container,
-  .helping-content {
+  .helping-content,
+  .customer-all-content {
     flex-direction: column;
   }
 
@@ -272,20 +312,25 @@ header {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
   .clients-img-content,
   .client-card-container,
   .unseen-container,
   .banner,
-  .helping-content {
+  .helping-content,
+  .customer-all-content,
+  .customer-box {
     flex-direction: column;
   }
 
   .clients-img-content,
-  .client-card-container {
+  .client-card-container,
+  .customer-box,
+  .customer-all-content {
     gap: 24px;
   }
 
+  .customer-image,
   .unseen-img img {
     max-width: 100%;
   }
@@ -293,7 +338,8 @@ header {
   .banner,
   .client-card-container,
   .unseen-container,
-  .helping-content {
+  .helping-content,
+  .customer-all-content {
     padding: 20px;
   }
 
@@ -306,6 +352,9 @@ header {
     gap: 50px;
   }
 
+  .customer-image img {
+    width: 100%;
+  }
   .banner-left img {
     width: 100%;
   }
